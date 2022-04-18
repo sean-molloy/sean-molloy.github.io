@@ -8,7 +8,6 @@ html{
 }
 
 body{
-  border-style: dashed;
   height: 100%;
   margin:0 0 0 0;
   font-size:1rem;
@@ -51,7 +50,7 @@ img.storeFrontPortrait{
 
 .childContainer{
   margin-top:auto;
-  border-style:solid;
+  
   display:flex;
   flex-direction: row;
   width: 100vmin;
@@ -65,7 +64,7 @@ img.storeFrontPortrait{
 }
 
 .logoContainer{
-  border-style: dashed;
+  
   flex:2;
   object-fit: contain;
   display:flex;
@@ -77,7 +76,7 @@ img.storeFrontPortrait{
 
 .logoJail{
   margin-top:10%;
-  border-style: dashed;
+  
   width:80%;
   height: 100%;
   display:flex;

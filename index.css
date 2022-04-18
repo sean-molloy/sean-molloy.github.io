@@ -21,7 +21,7 @@ html{
 body{
   height: 100%;
   margin:0 0 0 0;
-  font-size: 1.3rem;
+  font-size:3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -85,21 +85,24 @@ img.storeFrontPortrait{
 }
 
 .logoContainer{
-  
+  border-style: dashed;
   flex:2;
   object-fit: contain;
   display:flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  /* justify-content: flex-end; */
+  /* align-items: flex-start; */
+  /* align-items: center; */
 }
 
 .logoJail{
-  
+  margin-top:10%;
+  border-style: dashed;
   width:80%;
   height: 100%;
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 img.helloJamesLogo{
@@ -122,28 +125,30 @@ img.helloJamesLogo{
 .iconBox{
   padding-top: 2%;
   display:flex;
-  width: 7rem;
+  width: 15rem;
   
   justify-content: space-between;
 }
 
 a{
-  font-size: 2rem;
+  font-size: 4rem;
   
 }
 
 a:hover{
   transition: 0.2s;
   color:white;
-  font-size: 2rem;
+  
 }
 @media screen and (orientation:landscape) {
   body{
     height:100vmin;
-    /* font-size: 2.5vmax; */
+     font-size: 2rem; 
   }
 
-
+  a{
+    font-size: 3rem;
+  }
 
 
   .mainContainer{

@@ -1,0 +1,226 @@
+/* add external javascript
+  controlling scrolling behavior
+
+
+  main image is still distorted. perhaps make it a square too to prevent this?
+  can't do this every time though...
+
+  main image can take up less of screen to allow space for socials
+  footer links
+*/
+
+html{
+  background-color: blanchedalmond;
+  color:#a64c36; 
+  font-size: 100%;
+  overflow: hidden; 
+  height:100vh;
+  width:100vw;
+}
+
+body{
+  height: 100%;
+  margin:0 0 0 0;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+  line-height:0;
+}
+
+a{
+  text-decoration: none;
+  color:#a64c36; 
+  
+}
+
+a:hover{
+  transition: 0.5s;
+  color:black;
+}
+
+.mainContainer{
+ 
+  width:100vmin;
+  height:100vmax;
+  display:flex;
+  flex-direction: column;
+}
+
+.imgContainer{    
+  height:50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+img.storeFrontPortrait{ 
+  object-fit: cover;
+  height: 100%;
+  min-width: 100%;  
+}
+
+.uncleContainer{
+ 
+  display:flex;
+  flex-direction: column;
+  height: 50%; 
+  width: 100%;
+  justify-content: space-between;
+}
+
+.childContainer{
+  /* padding-top: 2vmax;  */
+  display:flex;
+  flex-direction: row;
+  width: 100vmin;
+   height: 70%; 
+}
+
+.footerContainer{
+  
+  height:20%;
+  margin-top: 2vmax;
+}
+
+.logoContainer{
+  
+  flex:2;
+  object-fit: contain;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logoJail{
+  
+  width:80%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img.helloJamesLogo{
+   object-fit:contain; 
+   max-width: 100%;
+   max-height:100%;  
+}
+
+.infoContainer{
+  
+  display:flex;
+  padding: 4% 0 4% 0;
+  flex-direction:column;
+  align-items: flex-end;
+  justify-content:space-between;
+  flex: 3;
+  padding-right: 5vmin;
+}
+
+.iconBox{
+  padding-top: 2%;
+  display:flex;
+  width: 7rem;
+  
+  justify-content: space-between;
+}
+
+a{
+  font-size: 2rem;
+  
+}
+
+a:hover{
+  transition: 0.2s;
+  color:white;
+  font-size: 2rem;
+}
+@media screen and (orientation:landscape) {
+  body{
+    height:100vmin;
+    /* font-size: 2.5vmax; */
+  }
+
+
+
+
+  .mainContainer{
+    flex-direction: row;
+    width:100vmax;
+    height: 100vmin;
+  }
+
+   .uncleContainer{
+    height: 100%;
+    width: 50%;
+  } 
+  
+  .childContainer{
+    width: 100%;
+  }
+
+  .logoContainer{
+    flex:1;
+    padding: 4% 0 4% 0;    
+  }
+
+  .logoJail{
+    justify-content: center;
+    align-items: flex-end;
+    padding-right:5%;
+  }
+
+  img.helloJamesLogo{
+    max-height: 30vmin;
+  }
+  
+  .imgContainer{
+   
+    height:99vmin;
+    width: 50vmax;
+  }
+  .childContainer{
+    flex-direction: column;
+  }
+
+  .infoContainer{
+    justify-content: space-between;
+    padding-right:5%;
+    flex:1;
+  }
+
+  .footerContainer{
+    
+    flex:1;
+  }
+}
+
+@media screen and (orientation:landscape) and ( min-width: 1080px){
+  .childContainer{
+    width:40vmax;
+  }
+
+/* 
+  .childContainer{
+    flex-direction: row;
+    padding-top: 25%;
+    height:30%;
+  }
+
+  .logoJail{
+    justify-content: flex-start;
+  }
+
+  .infoContainer{
+    flex:20;
+  }
+  .logoContainer{
+  flex:13;
+  }
+
+  .footerContainer{
+    flex:none;
+  } */
+}

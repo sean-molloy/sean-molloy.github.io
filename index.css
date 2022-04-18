@@ -40,28 +40,28 @@ img.storeFrontPortrait{
 }
 
 .uncleContainer{
- 
+  /* border-style: solid; */
   display:flex;
   flex-direction: column;
   height: 50%; 
   width: 100%;
-  justify-content: space-between;
+  justify-content:center;
+  
+
 }
 
 .childContainer{
-  margin-top:auto;
+  /* margin-top:auto; */
+  
   
   display:flex;
   flex-direction: row;
-  width: 100vmin;
-   height: 100%; 
+  width: 100%;   
+  /* was vmin */
+  height: 80%; 
 }
 
-.footerContainer{
-  
-  height:20%;
-  margin-top: 2vmax;
-}
+
 
 .logoContainer{
   
@@ -104,7 +104,7 @@ img.helloJamesLogo{
 .iconBox{
   padding-top: 2%;
   display:flex;
-  width: 8rem;
+  width: 6rem;
   
   justify-content: space-between;
 }
@@ -125,11 +125,11 @@ a:hover{
 @media screen and (orientation:landscape) {
   html{
     font-size: 20px;
+    overflow-y: auto;
   }
 
   body{
-    height:100vmin;
-     
+    height:100vmin;     
   }
 
   /* a{
@@ -138,6 +138,7 @@ a:hover{
 
 
   .mainContainer{
+    /* border-style: dashed; */
     flex-direction: row;
     width:100vmax;
     height: 100vmin;
@@ -169,11 +170,16 @@ a:hover{
     max-height: 30vmin;
   }
   
-  .imgContainer{
-   
-    height:99vmin;
-    width: 50vmax;
+  .imgContainer{   
+    height:100%;
+    width: 50%;
   }
+  img.storeFrontPortrait{ 
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;  
+  }
+
   .childContainer{
     flex-direction: column;
   }
@@ -188,32 +194,13 @@ a:hover{
     
     flex:1;
   }
+  .childContainer{
+    width:47vmax;
+  }
 }
 
-@media screen and (orientation:landscape) and ( min-width: 1080px){
-  .childContainer{
-    width:40vmax;
-  }
+/* @media screen and (orientation:landscape) and ( min-width: 1080px){
+ 
 
-/* 
-  .childContainer{
-    flex-direction: row;
-    padding-top: 25%;
-    height:30%;
-  }
 
-  .logoJail{
-    justify-content: flex-start;
-  }
-
-  .infoContainer{
-    flex:20;
-  }
-  .logoContainer{
-  flex:13;
-  }
-
-  .footerContainer{
-    flex:none;
-  } */
-}
+} */

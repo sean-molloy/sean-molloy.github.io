@@ -19,7 +19,6 @@ p{
 }
 
 .mainContainer{
- 
   width:100vmin;
   height:100vmax;
   display:flex;
@@ -34,54 +33,42 @@ p{
 }
 
 img.storeFrontPortrait{ 
+  /* position:relative; */
   object-fit: cover;
   height: 100%;
   min-width: 100%;  
 }
 
 .uncleContainer{
-  /* border-style: solid; */
   display:flex;
   flex-direction: column;
   height: 50%; 
   width: 100%;
   justify-content:center;
-  
-
 }
 
-.childContainer{
-  /* margin-top:auto; */
-  
-  
+.childContainer{  
   display:flex;
   flex-direction: row;
-  width: 100%;   
-  /* was vmin */
+  width: 100%;     
   height: 80%; 
 }
 
 
 
-.logoContainer{
-  
+.logoContainer{  
   flex:2;
   object-fit: contain;
   display:flex;
-  justify-content: center;
-  /* justify-content: flex-end; */
-  /* align-items: flex-start; */
-  /* align-items: center; */
+  justify-content: center; 
 }
 
 .logoJail{
-  margin-top:10%;
-  
+  margin-top:10%;  
   width:80%;
   height: 100%;
   display:flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  flex-direction: column; 
 }
 
 img.helloJamesLogo{
@@ -90,8 +77,7 @@ img.helloJamesLogo{
    max-height:100%;  
 }
 
-.infoContainer{
-  
+.infoContainer{  
   display:flex;
   padding: 4% 0 4% 0;
   flex-direction:column;
@@ -104,8 +90,7 @@ img.helloJamesLogo{
 .iconBox{
   padding-top: 2%;
   display:flex;
-  width: 10rem;
-  
+  width: 10rem;  
   justify-content: space-between;
 }
 
@@ -118,9 +103,7 @@ a{
 a:hover{
   transition: 0.2s;
   color:white;
-  
 }
-
 
 @media screen and (orientation:landscape) {
   html{
@@ -132,13 +115,9 @@ a:hover{
     height:100vmin;     
   }
 
-  /* a{
-    font-size: 3rem;
-  } */
 
 
-  .mainContainer{
-    /* border-style: dashed; */
+  .mainContainer{    
     flex-direction: row;
     width:100vmax;
     height: 100vmin;
@@ -146,24 +125,25 @@ a:hover{
 
    .uncleContainer{
     height: 100%;
-    width: 50%;
+    width: 45%;
+    align-items: center;
   } 
   
   .childContainer{
-    width: 100%;
+    flex-direction: column;   
+    width:70%;
   }
-
+ 
   .logoContainer{
     flex:1;
     justify-content: flex-end;
-    padding: 4% 0 4% 0;    
+    padding: 0 0 4% 0;    
   }
 
-  .logoJail{
+  .logoJail{    
     justify-content: center;
     align-items: flex-end;
-    margin-top: 0;
-    /* padding-right:5%; */
+    margin-top: 0; 
   }
 
   img.helloJamesLogo{
@@ -172,7 +152,7 @@ a:hover{
   
   .imgContainer{   
     height:100%;
-    width: 50%;
+    width: 55%;
   }
   img.storeFrontPortrait{ 
     object-fit: cover;
@@ -180,9 +160,7 @@ a:hover{
     min-height: 100%;  
   }
 
-  .childContainer{
-    flex-direction: column;
-  }
+  
 
   .infoContainer{
     justify-content: space-between;
@@ -190,17 +168,19 @@ a:hover{
     flex:1;
   }
 
-  .footerContainer{
-    
+  .footerContainer{    
     flex:1;
   }
-  .childContainer{
-    width:47vmax;
-  }
+  
 }
 
-/* @media screen and (orientation:landscape) and ( min-width: 1080px){
- 
+ @media screen and (orientation:landscape) and ( min-width: 1090px){
+  
+  .uncleContainer{
+    width:40%;
+  }
+  .imgContainer{
+    width:60%;
+  }
 
-
-} */
+} 

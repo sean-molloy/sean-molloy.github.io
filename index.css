@@ -1,44 +1,22 @@
-/* add external javascript
-  controlling scrolling behavior
-
-
-  main image is still distorted. perhaps make it a square too to prevent this?
-  can't do this every time though...
-
-  main image can take up less of screen to allow space for socials
-  footer links
-*/
-
 html{
   background-color: blanchedalmond;
   color:#a64c36; 
-  font-size: 100%;
+  font-size: 40px;
   overflow: hidden; 
   height:100vh;
   width:100vw;
 }
 
 body{
+  border-style: dashed;
   height: 100%;
   margin:0 0 0 0;
-  font-size:3rem;
+  font-size:1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p{
   line-height:0;
-  
-}
-
-a{
-  text-decoration: none;
-  color:#a64c36; 
-  
-}
-
-a:hover{
-  transition: 0.5s;
-  color:black;
 }
 
 .mainContainer{
@@ -72,11 +50,12 @@ img.storeFrontPortrait{
 }
 
 .childContainer{
-  /* padding-top: 2vmax;  */
+  margin-top:auto;
+  border-style:solid;
   display:flex;
   flex-direction: row;
   width: 100vmin;
-   height: 70%; 
+   height: 100%; 
 }
 
 .footerContainer{
@@ -126,14 +105,15 @@ img.helloJamesLogo{
 .iconBox{
   padding-top: 2%;
   display:flex;
-  width: 15rem;
+  width: 8rem;
   
   justify-content: space-between;
 }
 
-a{
-  font-size: 4rem;
-  
+a{  
+  text-decoration: none;
+  color:#a64c36; 
+  font-size: 1.5rem;
 }
 
 a:hover{
@@ -141,15 +121,21 @@ a:hover{
   color:white;
   
 }
+
+
 @media screen and (orientation:landscape) {
-  body{
-    height:100vmin;
-     font-size: 2rem; 
+  html{
+    font-size: 20px;
   }
 
-  a{
-    font-size: 3rem;
+  body{
+    height:100vmin;
+     
   }
+
+  /* a{
+    font-size: 3rem;
+  } */
 
 
   .mainContainer{
@@ -169,13 +155,15 @@ a:hover{
 
   .logoContainer{
     flex:1;
+    justify-content: flex-end;
     padding: 4% 0 4% 0;    
   }
 
   .logoJail{
     justify-content: center;
     align-items: flex-end;
-    padding-right:5%;
+    margin-top: 0;
+    /* padding-right:5%; */
   }
 
   img.helloJamesLogo{

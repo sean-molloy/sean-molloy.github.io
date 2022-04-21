@@ -1,0 +1,62 @@
+html{
+  background-image: url("background.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  background-size: 100vmin auto;
+  /* background-position: 0% 30%; */
+}
+
+p, a {
+  
+  color:#a64c36; ;
+}
+
+p{
+  font-size: 3.8vmin;
+  line-height: 0;
+}
+
+a{
+  font-size: 2rem;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color:white;
+  transition: 0.2s;
+}
+
+.infoContainer{
+  margin: 6vmax 7vmin auto auto;  
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+  
+}
+
+.iconBox{
+  margin-top: 1rem;
+  display:flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+@media  screen and (orientation: landscape) {
+  html{
+    background-image: url("backgroundLandscape.png");
+    background-size: auto 100vmin;
+    background-position: left top;
+  }
+  
+  .infoContainer{
+    margin: 15vmin 15vmax auto auto; 
+     
+  }
+
+  p{
+    font-size: 2.3vmax;
+  }
+}

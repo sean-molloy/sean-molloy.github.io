@@ -55,9 +55,9 @@ a:hover{
 
 .linkBox{
   display:flex;
-  width: 17rem;
+  width: 23rem;
   justify-content: space-between;
-  
+  flex-direction: column;
 }
 
 @media screen and (min-width: 380px) and (orientation:portrait) {
@@ -85,6 +85,10 @@ a:hover{
 
   .mainContainer{
     width:70%
+  }
+
+  .linkBox{
+    flex-direction: row;
   }
   /* .mainContainer{
   border-style: dashed;

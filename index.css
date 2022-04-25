@@ -1,90 +1,122 @@
 html{
   background-image: url("Terrazzo.jpg");
   background-size: cover;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Cabin', Verdana, Geneva, Tahoma, sans-serif;  
   font-size: 17px;  
+  overflow: hidden;
+  margin:0;
 }
 
 body{
+ margin:0;
  display:flex;
  flex-direction: column;
  align-items: center;
- justify-content: center;
+ justify-content: center; 
  height:100vmax;
+ width: 100vmin;
+ 
 }
 
 .mainContainer{
-
- 
+  opacity: 0.9;
+  margin:10%;
   display:flex;
   flex-direction: column;
   align-items: center;
-  height:80%; 
-  justify-content:space-between;
+  /* height:90vmax; 
+  width:90vmin; */
+ 
+  justify-content:space-around;
+
+
+  background-color: #fbf8e5;
+  
+  padding:0.4rem 1rem 0.4rem 1rem;
+  border-radius: 1rem;
 }
+
+
 
 h2{
   font-size: 1.1rem;
-  color:#a64c36; 
+  color:#727272;
+
 }
 
 p, a{
+  
   font-size: 1.1rem;
-  color:#a64c36; 
+  color:#727272; 
+ 
+
+}
+.centre{
+  text-align: center;
+}
+
+.justify{
   text-align: justify;
 }
 
-a{
-  color:white;
-}
 
 p{
   width:90%;
+
 }
 a{
   text-decoration: none;
-  background-color: #a64c36; 
-  padding:0.7rem;
+  /* background-color: #a64c36;  */
+  color:#fbf8e5;
+  background-color:#c16f30;
+  padding:0.4rem;
   border-radius: 1rem;
+  margin:0.5rem;
 }
 a:hover{
-  background-color:#da8975; 
-
+  /* background-color:#da8975;  */
+  background-color: #727272;
+  color:#fbf8e5;
   transition: 1s;
 }
 
 .linkBox{
   display:flex;
-  width: 23rem;
+  width: auto;
   justify-content: space-between;
   flex-direction: column;
 }
 
 @media screen and (min-width: 380px) and (orientation:portrait) {
   html{
-    font-size: 20px;
+    font-size: 19px;
   }
+ 
 }
 
 @media screen and (min-width: 700px)and (orientation:portrait) {
   html{
     font-size: 30px;
   }
+
+ 
 }
 
 @media screen and (orientation:landscape) {
  
   html{
-    font-size: 13px;
-    background-image: url(TerrazzoLS.jpg);
+    font-size: 16px;
+    background-image: url(TerrazzoLS.jpeg);
     background-size: cover;
   }
   body{
-    height: 100vmin;
+    width:100vmax;
+ height: 100vmin;
   }
 
   .mainContainer{
-    width:70%
+    width:70%;
+    height:70%;
   }
 
   .linkBox{
@@ -105,7 +137,7 @@ a:hover{
 
 @media screen and (orientation:landscape) and (min-width: 720px){
   html{
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 

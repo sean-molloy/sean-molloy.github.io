@@ -1,4 +1,5 @@
 /* Version 3 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 html{
   background-image: url(Terrazzo.jpg);
@@ -9,7 +10,7 @@ html{
   overflow: hidden; 
   color:#a64c36; 
   font-size: 3.1vmax;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p{

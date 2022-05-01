@@ -1,6 +1,7 @@
 html{
   overflow-x: hidden;
-  font-family: 'Cabin', Verdana, Geneva, Tahoma, sans-serif;  
+  /* font-family: 'Cabin', Verdana, Geneva, Tahoma, sans-serif;   */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
 
@@ -9,8 +10,10 @@ body{
 }
 
 p, a{
+  /* border-style: solid; */
   color: rgb(221, 124, 140);
   white-space: nowrap;
+   line-height: 0; 
 }
 
 a{
@@ -20,6 +23,12 @@ a{
 
 i{
   margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+i.smaller{
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
 }
 
 a:hover{
@@ -85,8 +94,7 @@ img.storeFront{
   background-color: transparent;
 }
 .infoBox{
-  background-color: #ebebeb;
-  
+  background-color: #ebebeb;  
   height: 30vmax;
   width:100vmin;
   position:absolute;
@@ -97,21 +105,22 @@ img.storeFront{
 }
 
 
-.info{
-  /* background-color: aqua; */
-  /* flex:1; */
+.info{    
+  height: 100%; 
+  display:flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+}
+
+/* .openingHours{
   border-style: dashed;
-  /* width: 10rem; */
-  height: 100%;
-  /* margin:10%; */
+} */
+
+.contact{      
+  display:none;  
 }
 
-.contact{
-  width:15rem;
-  display:none;
-}
-
-.interiorImage{
+.interiorImage{  
   
   background-image: url("cafe1.jpg");
   background-attachment: fixed;
@@ -126,19 +135,33 @@ img.storeFront{
 }
 
 
-.iconBox{
+
+.secondIconBox{
   
-  /* padding-top: 2%; */
+  font-size: 1.5rem;
+  margin-top: 95vmax;
+  position:absolute;
+  height: 5vmax;
+  
+  width: 100vmin;
+  
   display:flex;
-  flex-direction: column;
-  width: 10rem; 
-  height: 30vmin; 
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
+a.otherLink{
+  /* color:rgb(44, 37, 37); */
+  color: #ebebeb;
+  
+}
 
 @media screen and (orientation: landscape) {
   
+html{
+  font-size: 3.5vmin;
+}
+
   .imageContainer{
     height: 100vmin;
     width: 100vmax;
@@ -147,8 +170,12 @@ img.storeFront{
     
   }
 
-  .contact{
-    display:inline;
+  .contact{    
+    display:flex;    
+    flex-direction: column;
+    width: 18.5rem; 
+    height: 30vmin; 
+    justify-content: space-evenly;
   }
 
   .titleBox{
@@ -190,5 +217,9 @@ img.storeFront{
     width:100vmax;
     position:absolute;
 
+  }
+
+  .secondIconBox{
+  display:none;
   }
 }

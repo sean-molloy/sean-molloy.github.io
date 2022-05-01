@@ -107,7 +107,7 @@ img.storeFront{
 
 .info{    
   height: 100%; 
-  display:flex;
+  display:flex;  
   flex-direction: column; 
   justify-content: space-evenly;
 }
@@ -131,21 +131,21 @@ img.storeFront{
   height: 70vmax;
   width:100vmin;
   position:absolute;
-
 }
 
 
 
 .secondIconBox{
   
-  font-size: 1.5rem;
-  margin-top: 95vmax;
+  font-size: 2rem;
+  margin-top: 70vmax;
   position:absolute;
-  height: 5vmax;
-  
-  width: 100vmin;
+  height: 29vmax;
+  margin-left: 86vmin;
+  width: 10vmin;
   
   display:flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -153,7 +153,7 @@ img.storeFront{
 a.otherLink{
   /* color:rgb(44, 37, 37); */
   color: #ebebeb;
-  
+  /* margin:0; */
 }
 
 @media screen and (orientation: landscape) {

@@ -2,23 +2,21 @@ html{
   overflow-x: hidden;
   /* font-family: 'Cabin', Verdana, Geneva, Tahoma, sans-serif;   */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 2.8vmax;
 }
 
 body{
   margin: 0;
 }
 
-p, a{
-  /* border-style: solid; */
+p, a{  
   color: rgb(221, 124, 140);
   white-space: nowrap;
-   line-height: 0; 
+  line-height: 0; 
 }
 
 a{
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 
 i{
@@ -37,7 +35,7 @@ a:hover{
   transition: 1s;
 }
 
-.imageContainer{
+.imageContainer{  
   background-color: rgb(51, 22, 83);
   width: 100vmin;
   height: 100vmax; 
@@ -56,16 +54,14 @@ a:hover{
 img.cabinetFood{    
   object-fit: cover;
   width: 100%;
-  height: 100%;
- 
-   display:none;
+  height: 100%; 
+  display:none;
 }
 
 img.storeFront{
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  
+  height: 100%;  
 }
 
 .titleBox{
@@ -93,9 +89,9 @@ img.storeFront{
   height: 100vmax;
   background-color: transparent;
 }
-.infoBox{
+.infoBox{  
   background-color: #ebebeb;  
-  height: 30vmax;
+  height: 33vmax;
   width:100vmin;
   position:absolute;
   display: flex;
@@ -105,45 +101,47 @@ img.storeFront{
 }
 
 
-.info{    
-  height: 100%; 
+.info{      
   display:flex;  
   flex-direction: column; 
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
-
-/* .openingHours{
-  border-style: dashed;
-} */
 
 .contact{      
   display:none;  
 }
 
-.interiorImage{  
-  
+.iconOnlyContact{  
+  width:16rem;
+  height: 10vmin;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.interiorImage{    
   background-image: url("cafe1.jpg");
   background-attachment: fixed;
-  background-position: center 0%;
+  background-position: center 150px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 30vmax;
-  height: 70vmax;
+  margin-top: 33vmax;
+  height: 67vmax;
   width:100vmin;
   position:absolute;
 }
 
 
 
-.secondIconBox{
-  
+.secondIconBox{  
   font-size: 2rem;
   margin-top: 70vmax;
   position:absolute;
   height: 29vmax;
   margin-left: 86vmin;
-  width: 10vmin;
-  
+  width: 10vmin;  
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -151,23 +149,52 @@ img.storeFront{
 }
 
 a.otherLink{
-  /* color:rgb(44, 37, 37); */
-  color: #ebebeb;
-  /* margin:0; */
+  font-size: 1.5rem;
+}
+/* 
+@media screen and (orientation:portrait) and (min-width: 500px) {
+  html{
+    font-size: 4.5vmin;
+  }
 }
 
-@media screen and (orientation: landscape) {
-  
-html{
-  font-size: 3.5vmin;
+@media screen and (orientation:portrait) and (min-width: 700px) {
+  html{
+    font-size: 3vmin;
+  }
 }
+
+@media screen and (orientation:portrait) and (min-width: 900px) {
+  html{
+    font-size: 2vmin;
+  }
+} */
+
+@media screen and (orientation: landscape) {
+  html{
+    font-size: 2.5vmin;
+  }
+}
+
+
+@media screen and (orientation: landscape) and (min-width: 1100px) {
+  html{
+    font-size: 3vmin;
+  }
+}
+
+
+
+@media screen and (orientation: landscape)  {
+
+  
+
 
   .imageContainer{
     height: 100vmin;
     width: 100vmax;
     display:flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
   }
 
   .contact{    
@@ -176,6 +203,10 @@ html{
     width: 18.5rem; 
     height: 30vmin; 
     justify-content: space-evenly;
+  }
+
+  .iconOnlyContact{
+    display:none;
   }
 
   .titleBox{
@@ -200,16 +231,21 @@ html{
     height: 100vmin;    
   }
 
+
   .infoBox{  
     height: 30vmin;
     width:100vmax;
     flex-direction: row;
   }
 
+  .info{
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
   .interiorImage{
     background-image: url("cafe1.jpg");
     background-attachment: fixed;
-    background-position: center 0%;
+    background-position: center 80px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30vmin;
